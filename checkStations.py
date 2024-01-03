@@ -1,6 +1,6 @@
 from mygeodist import *
 
-radius=5 #check 5km around stations
+radius=4 #check 5km around stations?
 
 def checkStations(coords):
     results = []

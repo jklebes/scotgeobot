@@ -11,10 +11,10 @@ def checkCities(coords):
         f.close()
         p = shapely.from_geojson(filetext)
         for coord in coords:
-            coord_ = shapely.Point(coord)
+            coord_ = shapely.Point((coord[1], coord[0]))
             #print(name, coord, p.contains(coord_))
             if p.contains(coord_):
-                results.append(names[i])
+                results.append(name)
     # read names_circles, centers, radii from file
     f=open('cities.txt', 'r')
     names_circles = dict([])
