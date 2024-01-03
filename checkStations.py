@@ -1,9 +1,10 @@
 from mygeodist import *
+from collections import defaultdict
 
 radius=4 #check 5km around stations?
 
 def checkStations(coords):
-    results = []
+    results = defaultdict(lambda: []) #list of stations as tuples (name, coord) per graticule
     f=open('stations.txt', 'r')
     stations = dict([])
     line = f.readline()
@@ -16,5 +17,5 @@ def checkStations(coords):
         for coord in coords:
             center = stations[name]
             if dist_km(coord, center)<=radius:
-                results.append((name, center))
+                results[coord].append((name, center))
     return results 

@@ -1,4 +1,6 @@
-from mastodon import Mastodon
+tooting = True
+if tooting:
+    from mastodon import Mastodon
 from plyer import notification
 import datetime
 
@@ -6,7 +8,8 @@ from checkStations import *
 from checkCities import *
 from calcGeohashes import *
 
-mastodon = Mastodon(access_token = 'token.secret', api_base_url = 'https://botsin.space/')
+if tooting:
+    mastodon = Mastodon(access_token = 'token.secret', api_base_url = 'https://botsin.space/')
 
 def newDates(dates, last_dates):
     if not last_dates:
@@ -60,19 +63,32 @@ for date, offset in [(date,offset) for (date, offset) in results if date in nd]:
     cities = checkCities(coords)
     for c in cities:
         text = "Geohash in " + c + " on " + date.strftime(dateformat)+"."
-        mastodon.status_post(text)
+        if tooting:
+            mastodon.status_post(text)
         notification.notify(title="Geohash",
                                 message= text,
                                 app_icon = "eksplore_icon_259210.ico",
                                 timeout = 1)
         hits+=1
-    stations = checkStations(coords)
-    for (s,c) in stations:
+    stations = checkStations(coords) #dict listos of (s,c) by graticule
+    for g in stations:
+        stations_graticule = stations[g]
+        text = "Geohash near "
+        print(stations[g])
+        print(stations_graticule[:-1])
+        for s,c in stations_graticule[:-1]:
+            if s.split()[-1]=="Station":
+                text = text + s + " ("+ str(round(c[0],3)) +", "+ str(round(c[1],3))+"), "
+            else:
+                text = text + s + " station ("+ str(round(c[0],3)) +", "+ str(round(c[1],3))+"), " 
+        (s,c) = stations_graticule[-1]
         if s.split()[-1]=="Station":
-            text = "Geohash near " + s + " ("+ str(round(c[0],3)) +", "+ str(round(c[1],3))+") on " + date.strftime(dateformat)+"."
+            text = text+ "and "+ s + " ("+ str(round(c[0],3)) +", "+ str(round(c[1],3))+") "
         else:
-            text = "Geohash near " + s + " station ("+ str(round(c[0],3)) +", "+ str(round(c[1],3))+") on " + date.strftime(dateformat)+"."
-        mastodon.status_post(text)
+            text = text + "and " + s + " station ("+ str(round(c[0],3)) +", "+ str(round(c[1],3))+") " 
+        text = text + "on " + date.strftime(dateformat)+"."
+        if tooting:
+            mastodon.status_post(text)
         notification.notify(title="Geohash",
                                 message= text,
                                 app_icon = "eksplore_icon_259210.ico",
