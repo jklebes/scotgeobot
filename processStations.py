@@ -1,17 +1,19 @@
-# one-time process the detailed geojson file on all train stations in the north British Isles area down to a list of coordinates of those in mainland Scotland and England above latitude 54
+# one-time process the detailed geojson file on all train stations in the
+# north British Isles area down to a list of coordinates of those in
+# mainland Scotland and England above latitude 54
 
 import geojson
 import shapely
 
 # read file
-f=open("stations_full.geojson", 'r')
-stations=geojson.load(f).features
+f = open("stations_full.geojson", 'r')
+stations = geojson.load(f).features
 f.close()
 
 # read mainland polygon
-f=open("GBmainland.geojson", 'r')
+f = open("GBmainland.geojson", 'r')
 filecontents = f.read()
-mainland=shapely.from_geojson(filecontents)
+mainland = shapely.from_geojson(filecontents)
 f.close()
 
 # drop all info but name and coordinate
@@ -24,26 +26,26 @@ for station in stations:
             tourism = True
     except AttributeError:
         try:
-            if station.properties['usage']=="tourism":
-                tourism= True
+            if station.properties['usage'] == "tourism":
+                tourism = True
         except (AttributeError, KeyError):
             # no "usage" field also ok
             pass
     # look for coord in "geometry", if it's a polygon use any point
     g = station.geometry
-    if g.type=="Point":
-        coord=g.coordinates
-    elif g.type=="Polygon":
+    if g.type == "Point":
+        coord = g.coordinates
+    elif g.type == "Polygon":
         coord = g.coordinates[0][0]
-    elif g.type=="LineString":
+    elif g.type == "LineString":
         coord = g.coordinates[0]
     # parse into shapely Point object
     point = shapely.Point(coord)
     # filter by latitude
-    if not tourism and coord[1]>54.0 and mainland.contains(point):
+    if not tourism and coord[1] > 54.0 and mainland.contains(point):
         # look for name in "name", "properties.name", "reltags.name"
         try:
-            name=station.name
+            name = station.name
         except AttributeError:
             try:
                 name = station.properties['name']
@@ -57,6 +59,6 @@ for station in stations:
 
 
 # save names and coordinates to file
-f=open("stations.txt", 'w')
+f = open("stations.txt", 'w')
 f.write("\n".join(lines))
 f.close()
