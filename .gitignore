@@ -1,3 +1,5 @@
 home.txt
 __pycache__/
 *.secret
+.pytest_cache/
+.vscode/
