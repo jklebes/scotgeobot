@@ -1,5 +1,25 @@
 This bot notifies of geohashes in Scottish major cities and near railway stations in (or near) Scotland.  It can also alert of geohashes near the user's specified 'home' coordinate.  It posts desktop notifications or toots to mastodon.
 
+### Simple manual running
+
+The main program is ``scotgeobot.py``.  It takes (optional) flags:
+
+``--desktop``, ``--no-desktop`` whether to post results as desktop notifications.  Default no desktop.
+
+``--toot``, ``--no-toot`` whether to post notifications to mastodon (after configuring account and keys).  Default no tooting.
+
+``--redo``, ``-f`` By default only newly available dates and hashes are checked,for debug reasons this flag forces all to be run again.
+
+If neither desktop or toot notifications are turned on, output is to command line.  
+
+A testing run might be 
+
+``python3 scotgeobot.py --redo``
+
+and a production run
+
+``python3 --desktop --toot``
+
 ### Cron job
 New geohashes appear daily at around 14:30 (Scotland).  The program checks whether updated hashes have been posted (comparing to ``lastdates.txt``) and only gives desktop or social media notifications if the alerts are indeed new.  
 
