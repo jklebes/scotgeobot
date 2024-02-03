@@ -1,10 +1,12 @@
 import argparse
 from plyer import notification
+from os import path
 
-from calcGeohashes import geohashes, geohash_digits
-from mygeodist import dist_km
-from scotgeobot import (newDates, scotland_graticules,
-                        datefile, dateformat, getLastDates, notify)
+from .calcGeohashes import geohashes, geohash_digits
+from .mygeodist import dist_km
+from .scotgeobot import (newDates, scotland_graticules,
+                        datefile, dateformat, getLastDates, notify,
+                         project_directory)
 
 tooting = False; #this module is meant to be rnu privately on desktop
 
@@ -20,7 +22,8 @@ args = parser.parse_args()
 redo = args.redo;
 desktop = args.desktop;
 
-f = open("home.txt", 'r')
+# TODO what if no home is set?  Print instructions on how to set.
+f = open(path.join(project_directory,"data/home.txt"), 'r')
 home = list(map(float, f.readline().strip().split()))
 homedist = 15
 
