@@ -21,7 +21,7 @@ and a production run
 ``python3 --desktop --toot``.
 
 ### Cron job
-New geohashes appear daily at around 14:30 (Scotland).  The program checks whether updated hashes have been posted (comparing to ``lastdates.txt``) and only gives desktop or social media notifications if the alerts are indeed new.  
+New geohashes appear daily around 14:30 (Scotland).
 
 To set up a cron job, open
 ``$ crontab -e``
@@ -31,6 +31,8 @@ and add a line such as
 ``40 */2 * * * /home/pi/scotgeobot/cronscript.sh``
 
 - this one runs ``cronscript.sh`` on the 40th minute of every second hour.
+
+It's ok to run more than once per day, there is no output unless new coordinates become available.
 
 TODO have this generated and added on insall
 

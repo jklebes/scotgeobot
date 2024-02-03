@@ -1,5 +1,5 @@
 from collections import defaultdict
-from mygeodist import dist_km
+from .mygeodist import dist_km
 
 radius = 4  # check 5km around stations?
 

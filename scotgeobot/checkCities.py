@@ -1,5 +1,5 @@
 import shapely
-from mygeodist import dist_km
+from .mygeodist import dist_km
 
 
 def checkCities(coords):

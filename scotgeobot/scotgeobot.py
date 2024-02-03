@@ -1,10 +1,12 @@
-from calcGeohashes import *
-from checkCities import *
-from checkStations import *
+from .calcGeohashes import *
+from .checkCities import *
+from .checkStations import *
 from plyer import notification
+from os import path
 import datetime
 import argparse
 
+project_directory = path.dirname(path.dirname(path.abspath(__file__)))
 
 def newDates(dates, last_dates):
     if not last_dates:
@@ -37,7 +39,7 @@ def notify(message, desktop=False, tooting=False):
         mastodon.status_post(message);
 
 
-datefile = "lastdates.txt"
+datefile = path.join(project_directory,"data/lastdates.txt")
 dateformat = '%d-%m-%Y'
 
 # Scotland graticule integer parts, with name according to geohashing wiki noted
