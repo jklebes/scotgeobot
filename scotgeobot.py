@@ -1,9 +1,9 @@
 from calcGeohashes import *
 from checkCities import *
 from checkStations import *
+from plyer import notification
 import datetime
 import argparse
-
 
 
 def newDates(dates, last_dates):
@@ -21,7 +21,7 @@ def newDates(dates, last_dates):
             results.append(d)
     return results
 
-def notify(message):
+def notify(message, desktop=False, tooting=False):
     """depending on setting, ouput the message to terminal or
     desktop notifications; toot bot broadcast or not"""
     if desktop:
@@ -100,24 +100,22 @@ if __name__=="__main__":
             access_token='token.secret',
             api_base_url='https://botsin.space/')
 
-    if desktop:
-        from plyer import notification
 
-    results = geohashes()
-    last_dates = getLastDates(datefile, dateformat)
-    # empty if no new stock opening data since last run
-    nd = newDates([date for (date, offset) in results], last_dates)
-    if redo: # intervention for testing
-        nd = [date for (date,offset) in results];
-    hits = 0
-    for date, offset in [(date, offset)
-                        for (date, offset) in results if date in nd]:
+    last_dates= getLastDates(datefile=datefile, dateformat=dateformat)
+    dates_digits = geohash_digits()
+    nd = newDates([date for (date, offset) in dates_digits], last_dates)
+    if redo:
+        nd = [date for date,offset in dates_digits];
+    results = geohashes(scotland_graticules, [(date, offset)
+                     for (date, offset) in dates_digits if date in nd])
+    hits=0
+    for date in results:
+        coords=results[date]
         # scotland-specific sign, subtract from negative longitudes
-        coords = [(a + offset[0], b - offset[1]) for (a, b) in scotland_graticules]
         cities = checkCities(coords)
         for c in cities:
             text = "Geohash in " + c + " on " + date.strftime(dateformat) + "."
-            notify(text)
+            notify(text,desktop, tooting)
             hits += 1
         stations = checkStations(coords)  # dict listos of (s,c) by graticule
         for g in stations:
@@ -140,11 +138,11 @@ if __name__=="__main__":
                 text = text + s + \
                     " station (" + str(round(c[0], 3)) + ", " + str(round(c[1], 3)) + ") "
             text = text + "on " + date.strftime(dateformat) + "."
-            notify(text)
+            notify(text, desktop, tooting)
             hits += 1
 
     # write dates to file
     f = open(datefile, 'w')
-    for (date, offset) in results:
+    for (date, offset) in dates_digits:
         f.write(date.strftime(dateformat) + '\n')
     f.close()

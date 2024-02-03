@@ -1,7 +1,7 @@
 import argparse
 from plyer import notification
 
-from calcGeohashes import geohashes
+from calcGeohashes import geohashes, geohash_digits
 from mygeodist import dist_km
 from scotgeobot import (newDates, scotland_graticules,
                         datefile, dateformat, getLastDates, notify)
@@ -26,15 +26,15 @@ homedist = 15
 
 last_dates = getLastDates(datefile, dateformat)
 
-results = geohashes()
+dates_digits = geohash_digits()
 # empty if no new stock opening data since last run
-nd = newDates([date for (date, offset) in results], last_dates)
+nd = newDates([date for (date, offset) in dates_digits], last_dates)
 if redo:
-    nd = [date for date,offset in results];
-for date, offset in [(date, offset)
-                     for (date, offset) in results if date in nd]:
-    coords = [(a + offset[0], b - offset[1]) for (a, b) in scotland_graticules]
-    for coord in coords:
+    nd = [date for date,offset in dates_digits];
+results = geohashes(scotland_graticules, [(date, offset)
+                     for (date, offset) in dates_digits if date in nd])
+for date in results:
+    for coord in results[date]:
         dist = dist_km(home, coord)
         # print(dist, date)
         if dist <= homedist:
