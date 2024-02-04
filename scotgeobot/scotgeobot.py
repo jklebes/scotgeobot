@@ -39,7 +39,7 @@ def notify(message, desktop=False, tooting=False):
         mastodon.status_post(message);
 
 
-datefile = path.join(project_directory,"data/lastdates.txt")
+datefile = path.join(project_directory,"data", "lastdates.txt")
 dateformat = '%d-%m-%Y'
 
 # Scotland graticule integer parts, with name according to geohashing wiki noted

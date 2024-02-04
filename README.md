@@ -2,7 +2,7 @@ This bot notifies of geohashes in Scottish major cities and near railway station
 
 ### Simple manual running
 
-The main program is ``scotgeobot.py``.  It takes (optional) flags:
+The main command to run the module is ``python -m scotgeobot``.  It takes (optional) flags:
 
 ``--desktop``, ``--no-desktop`` whether to post results as desktop notifications.  Default no desktop.
 
@@ -10,15 +10,19 @@ The main program is ``scotgeobot.py``.  It takes (optional) flags:
 
 ``--redo``, ``-f`` By default only newly available dates and hashes are checked, meaning there will be no output if run again on the same day.  For debug reasons this flag forces all to be run again.
 
+``--null``, ``-n`` Post a message even when no hits near stations, cities, or home are found.
+
+``--homealert`` Check around the private location set in ``data/home.txt`` and post (desktop or command line only) alert.
+
 If neither desktop nor toot notifications are turned on, output is to command line.  
 
 A testing run might be 
 
-``python3 scotgeobot.py --redo``
+``python -m scotgeobot --redo --null --homealert``
 
 and a production run
 
-``python3 --desktop --toot``.
+``python -m scotgeobot --desktop --toot --homealert``.
 
 ### Cron job
 New geohashes appear daily around 14:30 (Scotland).

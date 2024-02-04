@@ -83,7 +83,7 @@ if __name__=="__main__":
                     text = "Geohash " + str(round(dist)) + \
                         "km from me on " + str(date) + "!"
                     # mastodon.status_post(text)
-                    notify(text)
+                    notify(text, desktop, tooting)
 
     # write dates to file
     f = open(datefile, 'w')

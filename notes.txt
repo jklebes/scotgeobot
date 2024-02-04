@@ -1,5 +1,1 @@
 add shapely dependency must be >= 2.0.2
-
-get rid of all slashes for path.join
-
-homealert doesnt do desktop notification properly

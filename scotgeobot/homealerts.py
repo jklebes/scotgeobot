@@ -9,7 +9,7 @@ from .scotgeobot import (newDates, scotland_graticules,
                          project_directory)
 def get_home():
     # TODO what if no home is set?  Print instructions on how to set.
-    f = open(path.join(project_directory,"data/home.txt"), 'r')
+    f = open(path.join(project_directory,"data","home.txt"), 'r')
     return list(map(float, f.readline().strip().split()))
 home = get_home()
 homedist = 15
