@@ -1,6 +1,6 @@
-from .calcGeohashes import *
-from .checkCities import *
-from .checkStations import *
+from scotgeobot.calcGeohashes import *
+from scotgeobot.checkCities import *
+from scotgeobot.checkStations import *
 from plyer import notification
 from os import path
 import datetime
