@@ -1,4 +1,5 @@
-home.txt
+*/home.txt
+*/lastdates.txt
 __pycache__/
 *.secret
 .pytest_cache/
