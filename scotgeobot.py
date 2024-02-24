@@ -97,7 +97,7 @@ if __name__=="__main__":
     if tooting:
         from mastodon import Mastodon
         mastodon = Mastodon(
-            access_token='token.secret',
+            access_token=path.join('data','token.secret'),
             api_base_url='https://botsin.space/')
 
 
