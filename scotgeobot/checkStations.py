@@ -2,9 +2,7 @@ from collections import defaultdict
 from os import path
 from .mygeodist import dist_km
 
-project_directory_name = ".scotgeobot"
-
-#project_directory = path.dirname(path.dirname(path.abspath(__file__)))
+project_directory = path.dirname(path.abspath(__file__))
 radius = 4  # check 5km around stations?
 
 

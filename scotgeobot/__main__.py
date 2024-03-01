@@ -31,9 +31,11 @@ if __name__=="__main__":
 
     if tooting:
         from mastodon import Mastodon
-        mastodon = Mastodon(
+        mastodon_account = Mastodon(
             access_token='token.secret',
             api_base_url='https://botsin.space/')
+    else:
+        mastodon_account=None
 
 
     last_dates= getLastDates(datefile=datefile, dateformat=dateformat)
@@ -50,7 +52,7 @@ if __name__=="__main__":
         cities = checkCities(coords)
         for c in cities:
             text = "Geohash in " + c + " on " + date.strftime(dateformat) + "."
-            notify(text,desktop, tooting)
+            notify(text,desktop, tooting, mastodon_account)
             hits += 1
         stations = checkStations(coords)  # dict listos of (s,c) by graticule
         for g in stations:
@@ -73,7 +75,7 @@ if __name__=="__main__":
                 text = text + s + \
                     " station (" + str(round(c[0], 3)) + ", " + str(round(c[1], 3)) + ") "
             text = text + "on " + date.strftime(dateformat) + "."
-            notify(text, desktop, tooting)
+            notify(text, desktop, tooting, mastodon_account)
             hits += 1
         if homealert:
             for coord in results[date]:
@@ -83,7 +85,7 @@ if __name__=="__main__":
                     text = "Geohash " + str(round(dist)) + \
                         "km from me on " + str(date) + "!"
                     # mastodon.status_post(text)
-                    notify(text, desktop, tooting)
+                    notify(text, desktop, tooting=False)
 
     # write dates to file
     f = open(datefile, 'w')

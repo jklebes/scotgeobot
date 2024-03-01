@@ -2,7 +2,7 @@ import shapely
 from os import path
 from .mygeodist import dist_km
 
-project_directory = path.dirname(path.dirname(path.abspath(__file__)))
+project_directory = path.dirname(path.abspath(__file__))
 def checkCities(coords):
     results = []
     names_poly = ['Edinburgh', 'Glasgow', 'Dundee',

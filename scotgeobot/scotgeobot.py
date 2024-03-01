@@ -23,7 +23,7 @@ def newDates(dates, last_dates):
             results.append(d)
     return results
 
-def notify(message, desktop=False, tooting=False):
+def notify(message, desktop=False, tooting=False, mastodon_account=None):
     """depending on setting, ouput the message to terminal or
     desktop notifications; toot bot broadcast or not"""
     if desktop:
@@ -36,7 +36,7 @@ def notify(message, desktop=False, tooting=False):
         print(message)
         print(" ############################### \n\n")
     if tooting:
-        mastodon.status_post(message);
+        mastodon_account.status_post(message);
 
 
 datefile = path.join(project_directory,"data", "lastdates.txt")
@@ -63,8 +63,6 @@ scotland_graticules = [(60, -2), (60, -1), (60, 0),  # Foula, Lerwick, Unst
                        (55, -6), (55, -5), (55, -4), (55, -3), (55, -2),
                        (54, -5), (54, -4), (54, -3)]  # Belfast, Douglas, Barrow-In-Furness
 
-
-
 def getLastDates(datefile, dateformat):
     try:
         last_dates = []
@@ -80,7 +78,6 @@ def getLastDates(datefile, dateformat):
     return last_dates
 
 if __name__=="__main__":
-
     # argparser
     parser = argparse.ArgumentParser()
     # whether to broadcast
@@ -95,11 +92,11 @@ if __name__=="__main__":
     tooting = args.toot;
     desktop = args.desktop;
     redo = args.redo;
-
     if tooting:
         from mastodon import Mastodon
-        mastodon = Mastodon(
-            access_token='token.secret',
+        assert(path.isfile(path.join(project_dir,"data","token.secret")))
+        mastodon_account = Mastodon(
+            access_token=path.join(project_dir,"data","token.secret"),
             api_base_url='https://botsin.space/')
 
 
