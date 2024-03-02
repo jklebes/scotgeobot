@@ -1,1 +1,9 @@
+TODO
 add shapely dependency must be >= 2.0.2
+
+UPLOAD
+hatch build
+twine upload --repository testpypi dist/scotgeobot-0.0.<n>*
+
+DOWNLOAD
+pip3 install --index-url https://test.pypi.org/simple/ scotgeobot==0.0.<n>
