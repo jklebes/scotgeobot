@@ -6,7 +6,7 @@ from os import path
 import datetime
 import argparse
 
-project_directory = path.dirname(path.dirname(path.abspath(__file__)))
+project_directory = path.dirname(path.abspath(__file__))
 
 def newDates(dates, last_dates):
     if not last_dates:
