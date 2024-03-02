@@ -1,5 +1,6 @@
 TODO
 add shapely dependency must be >= 2.0.2
+suppress UserWarning: The Python dbus package is not installed. related to desktop notifications and their icon
 
 UPLOAD
 hatch build

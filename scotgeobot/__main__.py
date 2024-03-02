@@ -2,7 +2,6 @@ from scotgeobot.calcGeohashes import *
 from scotgeobot.checkCities import *
 from scotgeobot.checkStations import *
 from scotgeobot.scotgeobot import *
-from scotgeobot.homealerts import *
 from plyer import notification
 from os import path
 import argparse
@@ -28,6 +27,11 @@ if __name__=="__main__":
     desktop = args.desktop;
     redo = args.redo;
     homealert = args.homealert;
+    if homealert:
+        # runs everything in global scope in there,
+        # including getting, setting home
+        # TODO handle that better, make functions
+        from scotgeobot.homealerts import *
 
     mastodon_account=None
     if tooting:
