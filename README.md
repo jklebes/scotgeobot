@@ -1,5 +1,11 @@
 This bot notifies of geohashes in Scottish major cities and near railway stations in (or near) Scotland.  It can also alert of geohashes near the user's specified 'home' coordinate.  It posts desktop notifications or toots to mastodon.
 
+### Install
+
+Currently 
+
+``pip install --index-url https://test.pypi.org/simple/ scotgeobot==0.0.6``
+
 ### Simple manual running
 
 The main command to run the module is ``python -m scotgeobot``.  It takes (optional) flags:
