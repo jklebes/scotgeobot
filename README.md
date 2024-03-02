@@ -10,10 +10,6 @@ The main command to run the module is ``python -m scotgeobot``.  It takes (optio
 
 ``--redo``, ``-f`` By default only newly available dates and hashes are checked, meaning there will be no output if run again on the same day.  For debug reasons this flag forces all to be run again.
 
-``--null``, ``-n`` Post a message even when no hits near stations, cities, or home are found.
-
-``--homealert`` Check around the private location set in ``data/home.txt`` and post (desktop or command line only) alert.
-
 If neither desktop nor toot notifications are turned on, output is to command line.  
 
 A testing run might be 
@@ -23,6 +19,13 @@ A testing run might be
 and a production run
 
 ``python -m scotgeobot --desktop --toot --homealert``.
+
+
+Not yet available, flags TODO:
+
+``--null``, ``-n`` Post a message even when no hits near stations, cities, or home are found.
+
+``--homealert`` Check around the private location set in ``data/home.txt`` and post (desktop or command line only) alert.
 
 ### Cron job
 New geohashes appear daily around 14:30 (Scotland).
@@ -46,7 +49,14 @@ the user should make a file home.txt containing their coordinates (space separat
 
 55.19433 -3.02568
 
+### Desktop notifications
+TODO desktop notifications unlikely to work on Windows.
+
 ### Mastodon bot
+Retrieve the Personal Access Token from a mastodon account (Development tab) and save it to a local file such as ``~/.mastodon/token.secret``. 
+
+On first run with the --toot flag, you will be taken through interactive setup. 
+Supply the server instance, such as ``botsin.space``, and the file location.
 
 ### Cities definition
 Dundee, Edinburgh, Aberdeen, and Glasgow are defined by the boundaries of their corresponding council areas.  The polygon outlines are saved in geojson files.
