@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "scotgeobot"
-version = "0.0.6"
+version = "0.0.7"
 authors = [{name="jklebes", email="jsklebes@googlemail.com"},]
 description = "Automated alerts of geohashes in or near cities in Scotland"
 readme = "README.md"
