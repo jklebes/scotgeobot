@@ -1,13 +1,15 @@
 from collections import defaultdict
-from mygeodist import dist_km
+from os import path
+from .mygeodist import dist_km
 
+project_directory = path.dirname(path.abspath(__file__))
 radius = 4  # check 5km around stations?
 
 
 def checkStations(coords):
     # list of stations as tuples (name, coord) per graticule
     results = defaultdict(lambda: [])
-    f = open('stations.txt', 'r')
+    f = open(path.join(project_directory, "data", 'stations.txt'), 'r')
     stations = dict([])
     line = f.readline()
     while line:

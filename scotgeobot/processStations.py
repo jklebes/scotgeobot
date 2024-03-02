@@ -4,14 +4,16 @@
 
 import geojson
 import shapely
+from os import path
 
+project_directory = path.dirname(path.abspath(__file__))
 # read file
-f = open("stations_full.geojson", 'r')
+f = open(path.join(project_directory, "data", "stations_full.geojson"), 'r')
 stations = geojson.load(f).features
 f.close()
 
 # read mainland polygon
-f = open("GBmainland.geojson", 'r')
+f = open(path.join(project_directory, "data", "GBmainland.geojson"), 'r')
 filecontents = f.read()
 mainland = shapely.from_geojson(filecontents)
 f.close()
@@ -59,6 +61,6 @@ for station in stations:
 
 
 # save names and coordinates to file
-f = open("stations.txt", 'w')
+f = open(path.join(project_directory, "data", "stations.txt"), 'w')
 f.write("\n".join(lines))
 f.close()

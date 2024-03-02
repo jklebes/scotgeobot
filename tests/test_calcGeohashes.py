@@ -1,9 +1,9 @@
-
+from .context import calcGeohashes
 
 def test_emptyrequest():
     """Query is empty list - expect output is empty dict"""
     # TODO how to assert empty dict/set
-    assert(geohashes([]) is None)
+    assert(calcGeohashes.geohashes([]) is None)
 
 def test_uniformity():
     """query is various graticules positive and negative but all east of -30: 
@@ -22,6 +22,4 @@ def test_noconnection():
     """desired behavior when internet it not reachable or carabiner.peeron.com is down"""
     pass
 
-if __name__ == "__main__":
-    import calcGeohashed
 

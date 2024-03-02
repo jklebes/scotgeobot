@@ -1,0 +1,578 @@
+Carlisle, 54.890582, -2.932919
+Carluke, 55.731118, -3.848904
+Newton, 55.818827, -4.133265
+Settle, 54.066955, -2.280834
+Wallyford, 55.940459, -3.014788
+Longniddry, 55.976236, -2.888647
+Drem, 56.005134, -2.785302
+Dunbar, 55.998211, -2.513684
+Alnmouth, 55.392793, -1.636772
+Berwick-upon-Tweed, 55.774555, -2.010542
+Chathill, 55.536726, -1.706652
+MetroCentre, 54.958889, -1.664932
+Armathwaite, 54.809435, -2.77208
+Lazonby and Kirkoswald, 54.750815, -2.703691
+Langwathby, 54.694363, -2.663557
+Garsdale, 54.321462, -2.326368
+Dent, 54.282566, -2.363634
+Ribblehead, 54.205499, -2.360371
+Horton-in-Ribblesdale, 54.149217, -2.302098
+Staveley, 54.375618, -2.819072
+Inverness, 57.479755, -4.223209
+Beauly, 57.478279, -4.469859
+Marske, 54.587381, -1.019516
+Dyce, 57.205694, -2.192708
+Leuchars, 56.374796, -2.893855
+Cupar, 56.317202, -3.008964
+Springfield, 56.295166, -3.052397
+Ladybank, 56.274246, -3.121595
+Inverurie, 57.286407, -2.373485
+Insch, 57.337374, -2.616918
+Huntly, 57.444492, -2.775785
+Keith, 57.551499, -2.95402
+Edinburgh Park, 55.927551, -3.307788
+Newcraighall, 55.932976, -3.090695
+Long Preston, 54.016658, -2.255152
+Port Glasgow, 55.933381, -4.68974
+Branchton, 55.940531, -4.803405
+Paisley Gilmour Street, 55.847476, -4.424482
+Cardonald, 55.852782, -4.340257
+Bishopton, 55.902096, -4.500493
+Wick, 58.44174, -3.098527
+Georgemas Junction, 58.513451, -3.451861
+Thurso, 58.590188, -3.527705
+Altnabreac, 58.388125, -3.706148
+Dalgety Bay, 56.042273, -3.367249
+Aberdour, 56.054755, -3.300976
+Burntisland, 56.057349, -3.233829
+Kinghorn, 56.069094, -3.17449
+Glenrothes with Thornton, 56.162291, -3.142935
+Cardenden, 56.141062, -3.260981
+Lochgelly, 56.1349, -3.313475
+Cowdenbeath, 56.111653, -3.343286
+Dunfermline Queen Margaret, 56.080166, -3.421771
+Dunfermline City, 56.068112, -3.452362
+Rosyth, 56.045376, -3.426329
+Muir of Ord, 57.517518, -4.460157
+Dingwall, 57.594037, -4.422266
+Alness, 57.694425, -4.249945
+Invergordon, 57.689037, -4.17475
+Fearn, 57.778143, -3.993948
+Tain, 57.814489, -4.052129
+Ardgay, 57.88157, -4.362216
+Lairg, 58.00189, -4.399868
+Golspie, 57.971509, -3.987169
+Dunrobin Castle, 57.985782, -3.947369
+Brora, 58.013143, -3.852342
+Helmsdale, 58.117729, -3.659146
+Garve, 57.613106, -4.688375
+Achnasheen, 57.57932, -5.072199
+Stromeferry, 57.3522, -5.55077
+Plockton, 57.333591, -5.665892
+Kyle of Lochalsh, 57.279776, -5.713749
+Carrbridge, 57.279478, -3.828189
+Elgin, 57.642784, -3.310943
+Polmont, 55.984479, -3.714473
+Linlithgow, 55.97641, -3.595766
+Fort William, 56.820558, -5.105313
+Banavie, 56.843801, -5.095883
+Lochailort, 56.881444, -5.663341
+Locheilside, 56.855949, -5.290365
+Loch Eil Outward Bound, 56.855371, -5.192885
+Milngavie, 55.941182, -4.314493
+Hillfoot, 55.920308, -4.319885
+Bearsden, 55.917006, -4.33237
+Cardross, 55.960353, -4.653294
+Craigendoran, 55.994844, -4.71192
+Gretna Green, 55.000756, -3.066305
+Annan, 54.983512, -3.26281
+Dumfries, 55.072704, -3.604446
+Kelvinhall, 55.871072, -4.299783
+Sanquhar, 55.370816, -3.924575
+Kirkconnel, 55.387509, -3.99881
+New Cumnock, 55.402236, -4.183355
+Auchinleck, 55.469874, -4.295961
+Troon, 55.542742, -4.655523
+Kilmarnock, 55.612346, -4.498786
+Bowling, 55.931058, -4.493192
+Helensburgh Central, 56.0039, -4.731988
+Kelvinbridge, 55.874251, -4.279854
+Hillhead, 55.875209, -4.293281
+Forsinard, 58.356856, -3.896959
+Lochwinnoch, 55.787174, -4.615722
+Spean Bridge, 56.889872, -4.921623
+Cartsdyke, 55.942212, -4.732362
+Bogston, 55.937185, -4.712276
+Woodhall, 55.931284, -4.655754
+Langbank, 55.924575, -4.586128
+Paisley St James, 55.852136, -4.442444
+Hillington West, 55.855862, -4.371094
+Hillington East, 55.854255, -4.354857
+Bellgrove, 55.856703, -4.224336
+Duke Street, 55.858636, -4.212665
+South Gyle, 55.936508, -3.299366
+Paisley Canal, 55.840096, -4.423787
+Battersby, 54.457555, -1.093357
+Greenock Central, 55.94521, -4.751876
+Whinhill, 55.938465, -4.746658
+Argyle Street, 55.857609, -4.250619
+Anderston, 55.859734, -4.270127
+Crossmyloof, 55.833965, -4.284141
+Shawlands, 55.829395, -4.292427
+Thorntonhall, 55.768461, -4.250919
+Giffnock, 55.804167, -4.293058
+Thornliebank, 55.811064, -4.311721
+Williamwood, 55.794006, -4.289914
+Cathcart, 55.817795, -4.26039
+Patterton, 55.790584, -4.335279
+Neilston, 55.782868, -4.426898
+Maxwell Park, 55.837682, -4.288546
+Pollokshields West, 55.837666, -4.275841
+Crookston, 55.842344, -4.364845
+Hawkhead, 55.842103, -4.399222
+Mount Florida, 55.82653, -4.261281
+Silverdale, 54.169607, -2.803755
+Carnforth, 54.129624, -2.771489
+Ibrox, 55.854705, -4.304882
+Govan, 55.862254, -4.310623
+St Enoch, 55.857596, -4.255172
+Buchanan Street, 55.862423, -4.25343
+Bridge Street, 55.851981, -4.25822
+St George's Cross, 55.871169, -4.268712
+Kinning Park, 55.850407, -4.288197
+Redcar East, 54.609055, -1.051925
+West Street, 55.849713, -4.265672
+Shields Road, 55.849824, -4.275244
+Mosspark, 55.84068, -4.34743
+Corkerhill, 55.83754, -4.334478
+Wishaw, 55.772177, -3.926214
+Uddingston, 55.823581, -4.086734
+Cambuslang, 55.819353, -4.172615
+Airbles, 55.782398, -3.994431
+Hamilton West, 55.779188, -4.05529
+Blantyre, 55.797258, -4.086847
+Burnside, 55.816932, -4.202783
+Croftfoot, 55.818309, -4.228313
+Kings Park, 55.819552, -4.245882
+Johnstone, 55.83429, -4.503114
+Howwood, 55.810572, -4.562509
+Glengarnock, 55.73905, -4.674807
+Dalry, 55.706023, -4.711154
+Irvine, 55.611233, -4.674835
+Stevenston, 55.63425, -4.750107
+Ardrossan South Beach, 55.641168, -4.800574
+Ardrossan Town, 55.639883, -4.812536
+Ardrossan Harbour, 55.640014, -4.821354
+West Kilbride, 55.696233, -4.851526
+Fairlie, 55.751964, -4.853116
+Largs, 55.793262, -4.867625
+Maryhill, 55.897503, -4.301149
+Kennishead, 55.813381, -4.324865
+Nitshill, 55.811902, -4.359834
+Pollokshaws East, 55.824803, -4.287146
+Langside, 55.820959, -4.276303
+Crosshill, 55.833159, -4.256598
+Queens Park, 55.835408, -4.266934
+Dunlop, 55.711914, -4.5324
+Stewarton, 55.682023, -4.51818
+Kilmaurs, 55.637354, -4.530477
+Maybole, 55.354569, -4.685857
+Girvan, 55.246278, -4.848084
+Barrhill, 55.097358, -4.782098
+Stranraer, 54.909286, -5.024767
+Dumbreck, 55.844816, -4.301025
+Bare Lane, 54.074657, -2.834966
+Morecambe, 54.070328, -2.868548
+Heysham Port, 54.033327, -2.912999
+Greenock West, 55.9472, -4.767762
+Inverkip, 55.906034, -4.872699
+Wemyss Bay, 55.87646, -4.889486
+Mount Vernon, 55.840466, -4.132684
+Bargeddie, 55.8513, -4.073752
+Baillieston, 55.844513, -4.113717
+Holytown, 55.812679, -3.973694
+Shotts, 55.818565, -3.799078
+Addiewell, 55.843449, -3.606305
+Fauldhouse, 55.822445, -3.719248
+Breich, 55.827475, -3.667588
+Fort Matilda, 55.958919, -4.795209
+Hunmanby, 54.174537, -0.314294
+Widdrington, 55.241144, -1.616219
+Cark and Cartmel, 54.177968, -2.974002
+Dalton, 54.154226, -3.178837
+Foxfield, 54.258597, -3.215935
+Silecroft, 54.226089, -3.334682
+Seascale, 54.396288, -3.485171
+Nethertown, 54.456227, -3.565624
+Harrington, 54.61352, -3.56555
+Flimby, 54.689988, -3.520531
+Dalston, 54.846165, -2.988576
+Dunblane, 56.185837, -3.965708
+Scarborough, 54.279947, -0.405622
+Monument, 54.974006, -1.613172
+Bishop Auckland, 54.657221, -1.677953
+Shildon, 54.626193, -1.63671
+Dinsdale, 54.514983, -1.467126
+Kirkwood, 55.854174, -4.048299
+Priesthill & Darnley, 55.812043, -4.342605
+Summerston, 55.898841, -4.292188
+Whitecraigs, 55.790276, -4.310306
+Newcastle, 54.968733, -1.617192
+Park Lane, 54.902301, -1.384615
+Chatelherault, 55.765377, -4.004611
+Larkhall, 55.738606, -3.975023
+Livingston South, 55.871609, -3.501519
+Stockton, 54.569876, -1.318175
+Exhibition Centre, 55.861395, -4.283197
+Gleneagles, 56.274928, -3.730995
+Invergowrie, 56.45625, -3.057829
+Rutherglen, 55.830847, -4.213338
+Prestwick International Airport, 55.509001, -4.614161
+Wigton, 54.829095, -3.164354
+Dunston, 54.949998, -1.641441
+Pollokshields East, 55.840761, -4.269079
+Drumfrochar, 55.94117, -4.772164
+Whifflet, 55.853906, -4.018709
+Prestwick Town, 55.501739, -4.614386
+Newton Aycliffe, 54.613739, -1.58971
+Newton-on-Ayr, 55.473966, -4.625979
+Eaglescliffe, 54.530089, -1.34972
+Blackridge, 55.884399, -3.750296
+Glaisdale, 54.439506, -0.793929
+Commondale, 54.48123, -0.974922
+Gorebridge, 55.84027, -3.046741
+Egton, 54.437531, -0.76175
+Sleights, 54.461113, -0.662759
+Castleton Moor, 54.467148, -0.946726
+Gourock, 55.96176, -4.815779
+Billingham, 54.605715, -1.279537
+Appleby, 54.58041, -2.486536
+Danby, 54.466175, -0.910998
+Lealholm, 54.460459, -0.825511
+Kildale, 54.477751, -1.068327
+Great Ayton, 54.489497, -1.115235
+Giggleswick, 54.061771, -2.302846
+Saltburn, 54.583419, -0.975223
+Longbeck, 54.589337, -1.030993
+Dalmarnock, 55.842185, -4.217471
+Saltcoats, 55.633892, -4.784581
+Fellgate, 54.957505, -1.485235
+Shawfair, 55.917697, -3.090224
+Eskbank, 55.881289, -3.082844
+Newtongrange, 55.864824, -3.068938
+Stow, 55.691857, -2.866821
+Conon Bridge, 57.561629, -4.440384
+Maryport, 54.711299, -3.494087
+Grosmont, 54.436456, -0.725357
+Bempton, 54.127791, -0.180715
+Curriehill, 55.900628, -3.318418
+West Calder, 55.853771, -3.566816
+Cleland, 55.804418, -3.910778
+Bellshill, 55.817031, -4.024439
+Merryton, 55.748926, -3.977437
+Carmyle, 55.834264, -4.158073
+Milliken Park, 55.824831, -4.534208
+Kilwinning, 55.656184, -4.709539
+Bishopbriggs, 55.903966, -4.22445
+Easterhouse, 55.859839, -4.106876
+Dalmeny, 55.98625, -3.381503
+Markinch, 56.200413, -3.130802
+North Queensferry, 56.012448, -3.394656
+Falkirk High, 55.991742, -3.792519
+Balmossie, 56.474707, -2.838382
+Barry Links, 56.493155, -2.745996
+Broughty Ferry, 56.467643, -2.873986
+Monifieth, 56.479745, -2.818402
+Laurencekirk, 56.836854, -2.465312
+Portlethen, 57.061753, -2.127746
+Kirkby-in-Furness, 54.232903, -3.187217
+Dalmally, 56.40101, -4.983305
+Grange-over-Sands, 54.195693, -2.902804
+Tweedbank, 55.605858, -2.758996
+Galashiels, 55.617816, -2.805546
+Dundee, 56.456749, -2.970535
+St Bees, 54.492353, -3.59124
+Heighington, 54.597132, -1.581771
+Seaham, 54.839091, -1.346378
+Seaton Carew, 54.658014, -1.200563
+Redcar Central, 54.615986, -1.070322
+South Bank, 54.584011, -1.176271
+Yarm, 54.493763, -1.351467
+Bridlington, 54.084065, -0.200369
+Driffield, 54.001443, -0.43454
+Filey, 54.209808, -0.29386
+Nafferton, 54.011343, -0.385624
+Seamer, 54.240658, -0.416994
+Bardon Mill, 54.974544, -2.345071
+Corbridge, 54.966265, -2.019029
+Haltwhistle, 54.96799, -2.462764
+Haydon Bridge, 54.97529, -2.247206
+Knaresborough, 54.009026, -1.470317
+Prudhoe, 54.965871, -1.864737
+Riding Mill, 54.948933, -1.971954
+Stocksfield, 54.946811, -1.917189
+Wennington, 54.123693, -2.587421
+Wetheral, 54.883731, -2.831964
+Wylam, 54.974874, -1.814368
+Motherwell, 55.791627, -3.994305
+Whitby, 54.484324, -0.614535
+Ruswarp, 54.46994, -0.627775
+Kingussie, 57.077779, -4.053289
+Kirknewton, 55.888933, -3.433517
+Alexandra Parade, 55.863313, -4.210606
+Blairhill, 55.866516, -4.042719
+Carfin, 55.807634, -3.955706
+Coatbridge Sunnyside, 55.866905, -4.027957
+Cumbernauld, 55.941902, -3.980305
+Hamilton Central, 55.773146, -4.038824
+Hartwood, 55.811176, -3.838986
+Pollokshaws West, 55.823854, -4.301414
+High Street, 55.859346, -4.239926
+Shieldmuir, 55.777284, -3.957477
+Coatbridge Central, 55.862669, -4.032078
+Croy, 55.955639, -4.03619
+Lenzie, 55.921342, -4.153926
+Alloa, 56.117907, -3.78886
+Carstairs, 55.691366, -3.669369
+Bentham, 54.115492, -2.510619
+Clapham, 54.105416, -2.410451
+Manors, 54.973972, -1.604787
+Fawdon, 55.013597, -1.644302
+Wansbeck Road, 55.014291, -1.635689
+Partick, 55.86975, -4.308757
+East Kilbride, 55.76599, -4.180917
+Hairmyres, 55.761909, -4.220548
+Busby, 55.780393, -4.262228
+Stirling, 56.120045, -3.934933
+Dalmuir, 55.912007, -4.426853
+Kilpatrick, 55.92411, -4.452836
+Westerton, 55.904826, -4.335134
+Drumchapel, 55.904734, -4.363032
+Dumbarton Central, 55.946483, -4.56737
+Dalreoch, 55.947389, -4.577906
+Airdrie, 55.864084, -3.982255
+Hyndland, 55.879747, -4.314609
+Jordanhill, 55.882741, -4.324885
+Anniesland, 55.889642, -4.321581
+Garscadden, 55.887515, -4.364405
+Yoker, 55.89258, -4.386367
+Clydebank, 55.900567, -4.404155
+Scotstounhill, 55.885077, -4.352882
+Springburn, 55.881853, -4.230165
+Greenfaulds, 55.934886, -3.993509
+Helensburgh Upper, 56.012441, -4.730772
+Tulloch, 56.884099, -4.701135
+Kingsknowe, 55.918909, -3.264857
+Slateford, 55.926616, -3.243746
+Wester Hailes, 55.914371, -3.28382
+Chillingham Road, 54.982914, -1.572056
+Felling, 54.953146, -1.571771
+Gateshead Stadium, 54.957669, -1.588159
+Haymarket, 54.977503, -1.613928
+Heworth, 54.951537, -1.556037
+Heworth, 54.95161, -1.557156
+Ilford Road, 55.000011, -1.610863
+Jesmond, 54.982821, -1.605695
+Millfield, 54.906467, -1.401013
+Central Station, 54.969366, -1.616719
+Pallion, 54.912741, -1.417855
+Regent Centre, 55.011954, -1.621628
+South Gosforth, 55.005785, -1.608302
+South Hylton, 54.904283, -1.447687
+St Peter's, 54.911068, -1.383759
+Stadium of Light, 54.918137, -1.382952
+Sunderland, 54.906112, -1.38244
+West Jesmond, 54.993435, -1.609803
+Pelaw, 54.952664, -1.542051
+Gateshead, 54.961722, -1.604407
+Bank Foot, 55.013918, -1.678073
+Callerton Parkway, 55.027706, -1.703411
+Airport, 55.035637, -1.711097
+Benton, 55.013903, -1.56763
+East Boldon, 54.946345, -1.420154
+Four Lane Ends, 55.010164, -1.578505
+Bede, 54.974285, -1.465676
+Jarrow, 54.979593, -1.493592
+Hebburn, 54.975292, -1.521224
+Brockley Whins, 54.959519, -1.460684
+Seaburn, 54.929562, -1.386504
+University, 54.902792, -1.392096
+St James, 54.974347, -1.62109
+Manors, 54.972671, -1.605632
+Walkergate, 54.985351, -1.559473
+Byker, 54.976039, -1.580344
+Wallsend, 54.989598, -1.532736
+Hadrian Road, 54.992269, -1.515968
+Howdon, 54.995907, -1.49416
+Percy Main, 54.999568, -1.474625
+Meadow Well, 55.001562, -1.465676
+Shiremoor, 55.036959, -1.505422
+Northumberland Park, 55.033097, -1.519833
+Longbenton, 55.008924, -1.591601
+Palmersville, 55.023694, -1.541185
+Kingston Park, 55.014424, -1.665882
+Allens West, 54.524557, -1.361652
+Rannoch, 56.68615, -4.576951
+Blaydon, 54.965963, -1.712881
+Barrow-in-Furness, 54.119121, -3.226026
+Ravenglass, 54.35566, -3.408879
+Whitehaven, 54.55322, -3.587179
+Nunthorpe, 54.528039, -1.16979
+Clarkston, 55.789516, -4.275743
+Forres, 57.611122, -3.624248
+Brunstane, 55.942065, -3.10085
+Edinburgh Gateway, 55.940939, -3.320133
+James Cook, 54.552, -1.208525
+Burneside, 54.355518, -2.767351
+Kents Bank, 54.172875, -2.925205
+Ulverston, 54.191716, -3.097933
+Brampton, 54.932154, -2.70385
+Acklington, 55.307217, -1.651769
+Thirsk, 54.228647, -1.373262
+Hexham, 54.973534, -2.094793
+Kintore, 57.243356, -2.350209
+North Road, 54.53573, -1.553929
+Askam, 54.189125, -3.204561
+Green Road, 54.244423, -3.245388
+Millom, 54.211004, -3.270609
+Bootle, 54.291182, -3.393836
+Sellafield, 54.416645, -3.510454
+Drigg, 54.376858, -3.443581
+Braystones, 54.439508, -3.541971
+Nairn, 57.580245, -3.87183
+Glasgow Central, 55.859407, -4.257852
+Glasgow Central Low Level, 55.858646, -4.259753
+Glasgow Queen Street, 55.862789, -4.251076
+Glasgow Queen Street Low Level, 55.862395, -4.25068
+Haymarket, 55.945278, -3.218939
+Penrith North Lakes, 54.661886, -2.758679
+Lockerbie, 55.122406, -3.353789
+Cessnock, 55.852371, -4.294961
+Middlesbrough, 54.579146, -1.234509
+Hartlepool, 54.686826, -1.207832
+Kirkby Stephen, 54.454908, -2.368703
+Pegswood, 55.178323, -1.64372
+Glenfinnan, 56.872438, -5.449309
+Crianlarich, 56.390387, -4.618477
+Taynuilt, 56.430852, -5.239816
+Oban, 56.412207, -5.474578
+Upper Tyndrum, 56.434807, -4.703939
+Corrour, 56.760237, -4.690712
+Bridge of Orchy, 56.516277, -4.764252
+Ardlui, 56.301844, -4.721605
+Garelochhead, 56.080024, -4.825459
+Arrochar and Tarbet, 56.203267, -4.723143
+Northallerton, 54.332473, -1.441378
+Blair Atholl, 56.765271, -3.849705
+Dunkeld and Birnam, 56.556577, -3.577515
+Dalwhinnie, 56.935153, -4.246233
+Pitlochry, 56.702364, -3.73564
+Aviemore, 57.188278, -3.82888
+Perth, 56.391475, -3.438396
+Robroyston, 55.886885, -4.174391
+Muirend, 55.810277, -4.273691
+Morar, 56.968955, -5.822089
+Singer, 55.907485, -4.4055
+Mallaig, 57.005542, -5.83023
+Charing Cross, 55.86464, -4.269578
+Bridgeton, 55.848326, -4.224818
+Aberdeen, 57.142649, -2.097635
+Drumry, 55.904597, -4.385483
+Darlington, 54.520662, -1.546691
+Edinburgh Waverley, 55.951902, -3.19042
+Windermere, 54.37949, -2.903305
+Workington, 54.644964, -3.558903
+Chester-le-Street, 54.854535, -1.578254
+Durham, 54.779749, -1.581512
+Kendal, 54.332247, -2.740145
+Lancaster, 54.048836, -2.807799
+Thornaby, 54.559189, -1.301696
+Oxenholme Lake District, 54.30506, -2.721777
+Arnside, 54.202601, -2.828067
+Lanark, 55.673503, -3.772423
+Hellifield, 54.010482, -2.226949
+Carnoustie, 56.500678, -2.705347
+Kirkcaldy, 56.111999, -3.167054
+Kinbrace, 58.258583, -3.941152
+Duncraig, 57.336937, -5.637114
+Attadale, 57.394479, -5.455396
+Invershin, 57.924852, -4.399583
+Kildonan, 58.170775, -3.869093
+Lochluichart, 57.621802, -4.808991
+Culrain, 57.919594, -4.404528
+Scotscalder, 58.48285, -3.55207
+Achnashellach, 57.482035, -5.333363
+Rogart, 57.988631, -4.158287
+Achanalt, 57.609603, -4.913845
+Duirinish, 57.319832, -5.691617
+Tyndrum Lower, 56.433605, -4.713444
+Corpach, 56.842766, -5.122118
+Connel Ferry, 56.452464, -5.383366
+Alexandria, 55.985272, -4.577324
+Montrose, 56.71283, -2.472217
+Loch Awe, 56.401837, -5.041702
+Arisaig, 56.912962, -5.839634
+Falls of Cruachan, 56.394017, -5.112726
+Renton, 55.970318, -4.586214
+Balloch, 56.002363, -4.583284
+Barnhill, 55.877741, -4.223332
+Roy Bridge, 56.888337, -4.837111
+Marton, 54.544225, -1.198362
+Carntyne, 55.8549, -4.179175
+Garrowhill, 55.855046, -4.129839
+Larbert, 56.022135, -3.829793
+Prestonpans, 55.952776, -2.975452
+Drumgelloch, 55.867676, -3.948315
+Shettleston, 55.853645, -4.159585
+Malton, 54.131857, -0.797729
+Gartcosh, 55.885621, -4.079383
+Livingston North, 55.901508, -3.543608
+Coatdyke, 55.864404, -4.005
+Stepps, 55.890116, -4.140434
+Uphall, 55.919038, -3.501903
+Musselburgh, 55.933448, -3.072493
+Kelvindale, 55.893482, -4.31008
+Bridge of Allan, 56.156746, -3.957286
+Newtonmore, 57.059133, -4.118947
+Beasdale, 56.900074, -5.763922
+Gypsy Lane, 54.533329, -1.180312
+Bathgate, 55.897105, -3.636274
+Camelon, 56.006233, -3.818392
+North Berwick, 56.056628, -2.731004
+Armadale, 55.88653, -3.692962
+Caldercruix, 55.888048, -3.888718
+Arbroath, 56.559338, -2.589274
+Morpeth, 55.162362, -1.683148
+Falkirk Grahamston, 56.002368, -3.785474
+Stonehaven, 56.966862, -2.225283
+Inverkeithing, 56.035239, -3.395417
+Partick, 55.869921, -4.309437
+Golf Street, 56.497946, -2.720123
+Ashfield, 55.88884, -4.248459
+Possilpark and Parkhouse, 55.890141, -4.258353
+Cowcaddens, 55.867788, -4.25939
+Whitley Bay, 55.039727, -1.442273
+Tynemouth, 55.017046, -1.428866
+Chichester, 54.986499, -1.432059
+Cullercoats, 55.034999, -1.436367
+Monkseaton, 55.042298, -1.45847
+West Monkseaton, 55.040547, -1.47598
+North Shields, 55.008138, -1.448963
+South Shields, 54.997368, -1.432987
+Tyne Dock, 54.976143, -1.441619
+Simonside, 54.971707, -1.455485
+Horden, 54.763762, -1.307221
+Dumbarton East, 55.942348, -4.554041
+Inverness Airport, 57.533364, -4.055475
+Cramlington, 55.087763, -1.598683
+Gilshochill, 55.897276, -4.282464
+Strathcarron, 57.42275, -5.428564
+Roose, 54.115059, -3.194383
+Aspatria, 54.758954, -3.331881
+Corkickle, 54.541669, -3.58213
+Parton, 54.570423, -3.58078
+Reston, 55.849914, -2.192602
+Barrhead, 55.803851, -4.397413
+Kirkhill, 55.814009, -4.167339
+Barassie, 55.561727, -4.651478
+Ayr, 55.458267, -4.625827

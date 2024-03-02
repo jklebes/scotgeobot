@@ -1,0 +1,1 @@
+add shapely dependency must be >= 2.0.2
