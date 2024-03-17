@@ -71,6 +71,8 @@ if __name__=="__main__":
             # check if this is a valid path 
             if path.isfile(token_path):
                 token_found = True
+            else:
+                print("Personal Access Token file not found at ", token_path, ".")
         
         # user message
         if not server_found or not token_found:
