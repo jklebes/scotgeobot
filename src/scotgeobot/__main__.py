@@ -34,6 +34,7 @@ if __name__=="__main__":
         from scotgeobot.homealerts import *
 
     mastodon_account=None
+    # TODO make all this a function in scotgeobot
     if tooting:
         try:
             from mastodon import Mastodon
