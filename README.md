@@ -4,7 +4,7 @@ This bot notifies of geohashes in Scottish major cities and near railway station
 
 Currently 
 
-``pip install --index-url https://test.pypi.org/simple/ scotgeobot==0.0.9``
+``pip install --index-url https://test.pypi.org/simple/ scotgeobot==0.0.10``
 
 ### Simple manual running
 
