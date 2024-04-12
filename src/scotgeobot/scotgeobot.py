@@ -3,6 +3,7 @@ from scotgeobot.checkCities import *
 from scotgeobot.checkStations import *
 from plyer import notification
 from os import path
+import warnings
 import datetime
 import argparse
 
@@ -33,13 +34,17 @@ def notify(message, desktop=False, tooting=False, mastodon_account=None):
                             app_icon="eksplore_icon_259210.ico",
                             timeout=1)
         except:
-            warn("Desktop notification failed")
+            warnings.warn("Desktop notification failed")
             desktop = False
     if tooting:
+        #TODO post rest as thread
+        #TODO this is character limit for botsin.space, fetch from instance?
+        if len(message > 500):
+            message = message[:501]
         try:
             mastodon_account.status_post(message)
         except:
-            warn("Toot failed to post")
+            warnings.warn("Toot failed to post")
             tooting = False
     if not desktop and not tooting:
         print(" ########### Geohash ########### ")

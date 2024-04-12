@@ -4,7 +4,7 @@ suppress UserWarning: The Python dbus package is not installed. related to deskt
 
 UPLOAD
 hatch build
-twine upload --repository testpypi dist/scotgeobot-0.0.<n>*
+twine upload --repository testpypi dist/scotgeobot-0.<n>.<m>*
 
 DOWNLOAD
-pip3 install --index-url https://test.pypi.org/simple/ scotgeobot==0.0.<n>
+pip3 install --index-url https://test.pypi.org/simple/ scotgeobot==0.<n>.<m>
