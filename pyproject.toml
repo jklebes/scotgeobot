@@ -5,12 +5,12 @@ build-backend = "hatchling.build"
 
 [project]
 name = "scotgeobot"
-version = "0.0.10"
+version = "0.1.0"
 authors = [{name="jklebes", email="jsklebes@googlemail.com"},]
 description = "Automated alerts of geohashes in or near cities in Scotland"
 readme = "README.md"
 classifiers = ["Programming Language :: Python :: 3"]
-dependencies = ["shapely>=2.0.2","plyer"]
+dependencies = ["shapely>=2.0.2","plyer", "warnings"]
 
 [project.optional-dependencies]
 dev = [ "geojson", "pytest","flake8"]

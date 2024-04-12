@@ -1,1 +1,1 @@
-/home/jsk/.mastodon/token.secret
+${HOME}/.mastodon/token.secret
