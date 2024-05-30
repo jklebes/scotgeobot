@@ -39,7 +39,7 @@ def notify(message, desktop=False, tooting=False, mastodon_account=None):
     if tooting:
         #TODO post rest as thread
         #TODO this is character limit for botsin.space, fetch from instance?
-        if len(message > 500):
+        if len(message) > 500:
             message = message[:501]
         try:
             mastodon_account.status_post(message)
@@ -94,72 +94,3 @@ def getLastDates(datefile, dateformat):
     except BaseException:
         last_dates = []
     return last_dates
-
-if __name__=="__main__":
-    # argparser
-    parser = argparse.ArgumentParser()
-    # whether to broadcast
-    parser.add_argument('--toot', action='store_true')
-    # skip desktop alerts in favor of command line
-    parser.add_argument('--desktop', action=argparse.BooleanOptionalAction, default=True)
-    # force re-check of old dates
-    parser.add_argument('-f', '--redo', action='store_true')
-
-    # a debugging run would be '--redo -no--desktop' and a production run would be '--toot' only
-    args = parser.parse_args()
-    tooting = args.toot;
-    desktop = args.desktop;
-    redo = args.redo;
-    if tooting:
-        from mastodon import Mastodon
-        assert(path.isfile(path.join(project_dir,"data","token.secret")))
-        mastodon_account = Mastodon(
-            access_token=path.join(project_dir,"data","token.secret"),
-            api_base_url='https://botsin.space/')
-
-
-    last_dates= getLastDates(datefile=datefile, dateformat=dateformat)
-    dates_digits = geohash_digits()
-    nd = newDates([date for (date, offset) in dates_digits], last_dates)
-    if redo:
-        nd = [date for date,offset in dates_digits];
-    results = geohashes(scotland_graticules, [(date, offset)
-                     for (date, offset) in dates_digits if date in nd])
-    hits=0
-    for date in results:
-        coords=results[date]
-        # scotland-specific sign, subtract from negative longitudes
-        cities = checkCities(coords)
-        for c in cities:
-            text = "Geohash in " + c + " on " + date.strftime(dateformat) + "."
-            notify(text,desktop, tooting)
-            hits += 1
-        stations = checkStations(coords)  # dict listos of (s,c) by graticule
-        for g in stations:
-            stations_graticule = stations[g]
-            text = "Geohash near "
-            for s, c in stations_graticule[:-1]:
-                if s.split()[-1] == "Station":
-                    text = text + s + \
-                        " (" + str(round(c[0], 3)) + ", " + str(round(c[1], 3)) + "), "
-                else:
-                    text = text + s + \
-                        " station (" + str(round(c[0], 3)) + ", " + str(round(c[1], 3)) + "), "
-            (s, c) = stations_graticule[-1]
-            if len(stations_graticule) > 1:
-                text = text + "and "
-            if s.split()[-1] == "Station":
-                text = text + s + \
-                    " (" + str(round(c[0], 3)) + ", " + str(round(c[1], 3)) + ") "
-            else:
-                text = text + s + \
-                    " station (" + str(round(c[0], 3)) + ", " + str(round(c[1], 3)) + ") "
-            text = text + "on " + date.strftime(dateformat) + "."
-            notify(text, desktop, tooting)
-            hits += 1
-
-    # write dates to file
-    f = open(datefile, 'w')
-    for (date, offset) in dates_digits:
-        f.write(date.strftime(dateformat) + '\n')
-    f.close()

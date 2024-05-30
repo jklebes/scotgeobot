@@ -41,7 +41,7 @@ if __name__=="__main__":
         except:
             print("Optional dependency mastodon not installed, cannot proceed as mastodon bot.")
             print("Try ")
-            print("       pip install mastodon")
+            print("       pip install Mastodon.py")
             tooting=False 
         import requests
     if tooting:
